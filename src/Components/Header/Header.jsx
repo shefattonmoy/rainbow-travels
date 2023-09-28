@@ -1,3 +1,4 @@
+import {useRef, useEffect} from 'react';
 import { Container, Row, Button } from 'reactstrap';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../../assets/images/cover.png';
@@ -19,7 +20,24 @@ const navLinks = [
 ]
 
 const Header = () => {
-    return <header className='header'>
+    const headerReference = useRef(null);
+    const stickyHeader = () => {
+        window.addEventListener('scroll', () => {
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                headerReference.current.classList.add('sticky-header')
+            }
+            else {
+                headerReference.current.classList.remove('sticky-header')
+            }
+        })
+    }
+
+    useEffect(() => {
+        stickyHeader()
+
+        return window.removeEventListener('scroll', stickyHeader)
+    })
+    return <header className='header' ref={headerReference}>
         <Container>
             <Row>
                 <div className="nav-wrapper d-flex align-items-center justify-content-between">
