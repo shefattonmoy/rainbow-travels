@@ -1,9 +1,12 @@
 import '../../Styles/Home.css';
 import { Container, Row, Col } from 'reactstrap';
+
 import worldImage from '../../assets/images/world.png'
 import heroImage01 from '../../assets/images/hero-img01.jpg';
 import heroImage02 from '../../assets/images/hero-img02.jpg';
 import heroVideo from '../../assets/images/hero-video.mp4';
+import experienceImage from '../../assets/images/experience.png';
+
 import Subtitle from '../../Shared/Subtitle/Subtitle';
 import SearchBar from '../../Shared/SearchBar/SearchBar';
 import ServicesList from '../../Components/Services/ServicesList';
@@ -72,6 +75,47 @@ const Home = () => {
                 </Row>
             </Container>
         </section>
+
+        {/* Experience Section */}
+
+        <section>
+            <Container>
+                <Row>
+                    <Col lg="6">
+                        <div className="experience-content">
+                            <Subtitle subtitle={"Our Experience"}></Subtitle>
+                            <h2>Creating Memories:<br /> Our Signature Experiences</h2>
+                            <p>At Rainbow Travels, we redefine travel experiences. Our mission is to immerse you in the heart of your chosen destination, ensuring every moment is a memorable one. We believe in crafting journeys that are as unique as you are, tailored to your interests, preferences, and desires.</p>
+
+                            <p>Our team of travel experts is passionate about uncovering hidden gems, securing exclusive access, and curating one-of-a-kind adventures that immerse you in the local culture. Whether you're seeking luxury and relaxation or adrenaline-pumping escapades, our diverse range of experiences is designed to cater to every traveler's dream.</p>
+
+                            <p>Expect seamless logistics, expert guidance, and the freedom to explore at your own pace. Our commitment to excellence ensures that your travel experience with us will be nothing short of extraordinary. Join us on a journey that will leave you with unforgettable memories, stories to share, and a deep connection to the world's most captivating destinations.</p>
+                        </div>
+                        <div className="counter-wrapper d-flex align-items-center gap-5">
+                            <div className="counter-box">
+                                <span>26k+</span>
+                                <h6>Successful trips</h6>
+                            </div>
+                            <div className="counter-box">
+                                <span>14k+</span>
+                                <h6>Regular clients</h6>
+                            </div>
+                            <div className="counter-box">
+                                <span>22</span>
+                                <h6>Years experiences</h6>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col lg="6">
+                        <div className="experience-image">
+                            <img src={experienceImage} alt="" />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+        {/* Gallery Section */}
     </>
 };
 
