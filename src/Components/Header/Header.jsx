@@ -16,7 +16,7 @@ const navLinks = [
     {
         path: '/tours',
         display: 'Tours'
-    },
+    }
 ]
 
 const Header = () => {
@@ -58,7 +58,7 @@ const Header = () => {
                     <div className="nav-right d-flex align-items-center gap-4">
                         <div className="nav-buttons d-flex align-items-center gap-4">
                             <Button className='btn secondary__btn'><Link to="/login">Login</Link></Button>
-                            <Button className='btn primary__btn'><Link to="/login">Register</Link></Button>
+                            <Button className='btn primary__btn'><Link to="/register">Register</Link></Button>
                         </div>
                         <span className='mobile-menu'>
                             <i className="ri-menu-line"></i>
