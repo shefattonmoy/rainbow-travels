@@ -28,7 +28,7 @@ const Tours = () => {
             <Container>
                 <Row>
                     {
-                        tourData?.map(tour => (<Col lg="3" className="mb-4" key={tour.id}><TourCard tour={tour}></TourCard></Col>))
+                        tourData?.map(tour => (<Col lg="3" md="6" sm="6" className="mb-4" key={tour.id}><TourCard tour={tour}></TourCard></Col>))
                     }
                     <Col lg="12">
                         <div className="pagination d-flex align-items-center justify-content-center my-4 gap-3">

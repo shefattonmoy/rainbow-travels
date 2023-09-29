@@ -21,6 +21,7 @@ const navLinks = [
 
 const Header = () => {
     const headerReference = useRef(null);
+    const menuReference = useRef(null);
     const stickyHeader = () => {
         window.addEventListener('scroll', () => {
             if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -37,6 +38,10 @@ const Header = () => {
 
         return window.removeEventListener('scroll', stickyHeader)
     })
+
+    const toggleMenu = () => {
+        menuReference.current.classList.toggle('mobile-menu');
+    }
     return <header className='header' ref={headerReference}>
         <Container>
             <Row>
@@ -44,7 +49,7 @@ const Header = () => {
                     <div className="logo">
                         <img src={logo} alt='' />
                     </div>
-                    <div className="navigation">
+                    <div className="navigation" ref={menuReference} onClick={toggleMenu}>
                         <ul className="menu d-flex align-items-center gap-5">
                             {
                                 navLinks.map((item, index) => (
@@ -60,7 +65,7 @@ const Header = () => {
                             <Button className='btn secondary__btn'><Link to="/login">Login</Link></Button>
                             <Button className='btn primary__btn'><Link to="/register">Register</Link></Button>
                         </div>
-                        <span className='mobile-menu'>
+                        <span className='mobile-menu' onClick={toggleMenu}>
                             <i className="ri-menu-line"></i>
                         </span>
                     </div>

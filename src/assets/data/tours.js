@@ -52,9 +52,9 @@ const tours = [
   {
     id: "03",
     title: "Snowy Mountains, Australia",
-    city: "Australia",
+    city: "New South Wales, Australia",
     distance: 500,
-    address: "Southeastern Australia",
+    address: "New South Wales, Australia",
     price: 99,
     maxGroupSize: 8,
     description: "The Snowy Mountains are also famous for the Snowy Mountains Scheme, a massive hydroelectricity and irrigation project, one of the engineering marvels of Australia. This scheme involves a network of dams, tunnels, and power stations built to harness the region's water resources. Beyond its engineering feats, the Snowy Mountains offer a captivating blend of natural beauty and outdoor adventure, making it a popular attraction for both Australians and international travelers.",
@@ -71,7 +71,7 @@ const tours = [
   {
     id: "04",
     title: "Beautiful Sunrise, Thailand",
-    city: "Thailand",
+    city: "Phuket",
     distance: 500,
     address: "City Center, Surat Thani, Thailand",
     price: 99,
@@ -142,9 +142,9 @@ const tours = [
   {
     id: "08",
     title: "Snowy Mountains, Australia",
-    city: "Australia",
+    city: "New South Wales, Australia",
     distance: 500,
-    address: "Southeastern Australia",
+    address: "New South Wales, Australia",
     price: 99,
     maxGroupSize: 8,
     description: "The Snowy Mountains are also famous for the Snowy Mountains Scheme, a massive hydroelectricity and irrigation project, one of the engineering marvels of Australia. This scheme involves a network of dams, tunnels, and power stations built to harness the region's water resources. Beyond its engineering feats, the Snowy Mountains offer a captivating blend of natural beauty and outdoor adventure, making it a popular attraction for both Australians and international travelers.",
